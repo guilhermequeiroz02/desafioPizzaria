@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="106dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_constraintCircleRadius="10dp"
+    android:background="@drawable/custom_listdrawable">
+
+    <ImageView
+        android:id="@+id/ivPizza"
+        android:layout_width="175dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tvFlavor"
+        android:layout_width="130dp"
+        android:layout_height="19dp"
+        android:text="sabor"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+         app:layout_constraintLeft_toRightOf="@id/ivPizza"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="a partir de:"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvFlavor"
+        app:layout_constraintLeft_toRightOf="@id/ivPizza"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="8dp"/>
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="price"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvInfo"
+        app:layout_constraintLeft_toRightOf="@id/ivPizza"
+        android:layout_marginLeft="8dp"/>
+
+    <RatingBar
+        android:id="@+id/rbNote"
+        android:layout_width="80dp"
+        android:layout_height="12dp"
+        style="?android:attr/ratingBarStyleSmall"
+        android:background="#282C30"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="6dp"
+        android:progressTint="#FDC650"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
